@@ -9,6 +9,10 @@ form input {
     font-size: 1rem;
 }
 
+.form {
+    align-self: center;
+}
+
 input::placeholder {
     color: black;
     font-size: 1.3rem;

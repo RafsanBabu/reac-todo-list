@@ -8,7 +8,7 @@ const Form = (props) => {
     }
    
     return (
-        <div>
+        <div className="form">
             <form>
                 <input type="text"  onChange={(e) => handleText(e)} placeholder="Add task here......"></input>
             </form>
