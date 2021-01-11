@@ -3,11 +3,11 @@ import './TodoList.css'
 
 const TodoList = (props) => {
     return (
-        <div>
-            <div className="todoitem">
+        <div className="todoitem">
+            <div className="d-flex list">
             <p>{props.taskitem.value}</p>
-            <button onClick={(e) =>props.handleDelete(e, props.taskitem.id)}>Delete</button>
-            <button onClick={(e) =>props.handleComplete(e, props.taskitem.id)}>Completed</button>
+            <button className="delete" onClick={(e) =>props.handleDelete(e, props.taskitem.id)}>Delete</button>
+            <button className="completed" onClick={(e) =>props.handleComplete(e, props.taskitem.id)}>Completed</button>
             </div>
             
         </div>

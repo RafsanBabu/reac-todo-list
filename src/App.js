@@ -43,11 +43,11 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <h1>React Todo App</h1>
+    <div className="container App">
+      <h1 className="title">React Todo App</h1>
       <div className="form">
       <Form task={task} setTask={setTask}></Form>
-      <button onClick={handleAddButton}>Add</button>
+      <button className="add-btn" onClick={handleAddButton}>Add</button>
       </div>
       {taskList.map(taskitem => <TodoList 
       handleDelete={handleDelete}
